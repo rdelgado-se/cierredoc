@@ -848,7 +848,7 @@ async function generatePDF() {
   if (images.length > 0) {
     doc.addPage(); y=mg;
     sec('EVIDENCIAS FOTOGRAFICAS - '+images.length+' IMAGEN(ES)');
-    var cols=3, cellW=(pw-mg*2-8)/cols, cellH=cellW*0.75, gap=4, col=0;
+    var cols=2, cellW=(pw-mg*2-6)/cols, cellH=cellW*0.75, gap=6, col=0;
     for(var i=0;i<images.length;i++){
       var x=mg+col*(cellW+gap);
       if(y+cellH>ph-mg-8){doc.addPage();y=mg;col=0;}
